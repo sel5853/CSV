@@ -18,6 +18,7 @@ public class HelloWorld extends Application
     @Override
     public void start(Stage primaryStage) 
     {
+    	int score = 0;
         primaryStage.setTitle("Click me!");
         Button btn = new Button();
         btn.setText("Say 'Click me!'");
@@ -26,7 +27,8 @@ public class HelloWorld extends Application
             @Override
             public void handle(ActionEvent event) 
             {
-                System.out.println("Hello World!");
+                System.out.println("Click me again!");
+                System.out.println("Score: " + score);
             }
         });
         
