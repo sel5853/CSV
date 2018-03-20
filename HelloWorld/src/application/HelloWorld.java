@@ -8,20 +8,24 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class HelloWorld extends Application {
-    public static void main(String[] args) {
+public class HelloWorld extends Application 
+{
+    public static void main(String[] args) 
+    {
         launch(args);
     }
     
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) 
+    {
         primaryStage.setTitle("Click me!");
         Button btn = new Button();
         btn.setText("Say 'Click me!'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
- 
+        btn.setOnAction(new EventHandler<ActionEvent>() 
+        {
             @Override
-            public void handle(ActionEvent event) {
+            public void handle(ActionEvent event) 
+            {
                 System.out.println("Hello World!");
             }
         });
