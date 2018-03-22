@@ -10,6 +10,8 @@ import javafx.stage.Stage;
 
 public class HelloWorld extends Application 
 {
+	private int score = 0;
+	
     public static void main(String[] args) 
     {
         launch(args);
@@ -18,7 +20,6 @@ public class HelloWorld extends Application
     @Override
     public void start(Stage primaryStage) 
     {
-    	int score = 0;
         primaryStage.setTitle("Click me!");
         Button btn = new Button();
         btn.setText("Say 'Click me!'");
@@ -27,7 +28,8 @@ public class HelloWorld extends Application
             @Override
             public void handle(ActionEvent event) 
             {
-                System.out.println("Click me again!");
+                System.out.println("Click me!");
+                score++;
                 System.out.println("Score: " + score);
             }
         });
